@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.gasnetwork.org/sitemap.xml
+Sitemap: https://gasnetwork.github.io/Engenharia/sitemap.xml
