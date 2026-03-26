@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Limpeza interna de tubulação de gás | Gás Network Engenharia</title><meta name="description" content="Limpeza interna de tubulação de gás com atendimento técnico em São Paulo e região. Procedimentos para limpeza e recuperação de desempenho."/><meta name="theme-color" content="#0B1F4D"/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><style>
+
+:root {
+  --bg: #07152f;
+  --bg-soft: #0d2248;
+  --surface: #ffffff;
+  --surface-2: #f5f8ff;
+  --text: #13213e;
+  --muted: #5b6782;
+  --line: #dbe5f5;
+  --primary: #1652c0;
+  --primary-strong: #0b2f78;
+  --accent: #ffb100;
+  --success: #10b981;
+  --shadow: 0 18px 60px rgba(8, 22, 56, 0.14);
+  --radius-xl: 28px;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --container: 1180px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #f4f7ff 0%, #ffffff 38%, #f7faff 100%);
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.container { width: min(100% - 32px, var(--container)); margin: 0 auto; }
+.section { padding: 88px 0; }
+.section-sm { padding: 56px 0; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px;
+  background: rgba(22,82,192,.08); color: var(--primary); font-weight: 700; font-size: .85rem; letter-spacing: .03em;
+}
+.eyebrow.dark { background: rgba(255,255,255,.12); color: #fff; }
+.h1, h1 { font-size: clamp(2.3rem, 4vw, 4.4rem); line-height: 1.08; margin: 16px 0 18px; font-weight: 800; letter-spacing: -.03em; }
+.h2, h2 { font-size: clamp(1.7rem, 3vw, 2.7rem); line-height: 1.14; margin: 0 0 14px; font-weight: 800; letter-spacing: -.02em; }
+.h3, h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); margin: 0 0 10px; font-weight: 800; }
+p.lead, .lead { font-size: 1.12rem; color: var(--muted); max-width: 72ch; }
+p { margin: 0 0 16px; }
+.small { font-size: .95rem; color: var(--muted); }
+.topbar {
+  background: linear-gradient(90deg, #07152f 0%, #0e2758 100%);
+  color: #ecf3ff; font-size: .95rem;
+}
+.topbar .container {
+  display: flex; justify-content: space-between; gap: 18px; padding: 10px 0; flex-wrap: wrap;
+}
+.topbar a { color: #fff; opacity: .95; }
+.topbar .meta { display: flex; gap: 18px; flex-wrap: wrap; }
+.header {
+  position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px);
+  background: rgba(255,255,255,.82); border-bottom: 1px solid rgba(219,229,245,.8);
+}
+.nav {
+  display: flex; align-items: center; justify-content: space-between; min-height: 84px; gap: 20px;
+}
+.brand { display: flex; align-items: center; gap: 16px; }
+.brand-logo { display: block; width: 260px; height: auto; max-width: min(260px, 52vw); }
+.footer-logo { display: block; width: 220px; height: auto; max-width: 100%; }
+.brand-copy strong { display: block; font-size: 1.05rem; }
+.brand-copy span { color: var(--muted); font-size: .93rem; }
+.nav-links { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.nav-links a {
+  padding: 12px 14px; border-radius: 12px; color: var(--text); font-weight: 600;
+}
+.nav-links a:hover, .nav-links a.active { background: #edf4ff; color: var(--primary); }
+.actions { display: flex; gap: 12px; align-items: center; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 14px 20px; border-radius: 14px; border: 1px solid transparent; font-weight: 800; transition: .2s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { background: linear-gradient(135deg, var(--primary), var(--primary-strong)); color: #fff; box-shadow: 0 14px 30px rgba(22,82,192,.24); }
+.btn-secondary { background: #fff; color: var(--primary); border-color: #cfe0ff; }
+.btn-success { background: linear-gradient(135deg, #10b981, #059669); color: #fff; box-shadow: 0 14px 30px rgba(16,185,129,.2); }
+.hero {
+  position: relative; overflow: hidden;
+  background: radial-gradient(circle at top right, rgba(255,177,0,.14), transparent 26%), linear-gradient(135deg, #07152f 0%, #0d2248 44%, #15397a 100%);
+  color: #fff;
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.0)); pointer-events: none;
+}
+.hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; padding: 78px 0 84px; }
+.hero p { color: rgba(236,243,255,.84); }
+.hero-card {
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); backdrop-filter: blur(10px);
+  border-radius: var(--radius-xl); padding: 18px; box-shadow: 0 20px 60px rgba(0,0,0,.2);
+}
+.hero-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 28px; }
+.stat {
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); border-radius: 18px; padding: 18px;
+}
+.stat strong { display: block; font-size: 1.5rem; color: #fff; }
+.stat span { color: rgba(236,243,255,.8); font-size: .92rem; }
+.trust-row {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-top: 26px;
+}
+.trust-pill {
+  padding: 16px 18px; border-radius: 18px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow);
+}
+.grid { display: grid; gap: 22px; }
+.grid-2 { grid-template-columns: repeat(2,1fr); }
+.grid-3 { grid-template-columns: repeat(3,1fr); }
+.grid-4 { grid-template-columns: repeat(4,1fr); }
+.card {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 26px; box-shadow: var(--shadow);
+}
+.card.soft { background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%); }
+.card.dark {
+  background: linear-gradient(180deg, #0c1f48 0%, #0a1837 100%); color: #fff; border-color: rgba(255,255,255,.12);
+}
+.card.dark p, .card.dark .small { color: rgba(236,243,255,.78); }
+.icon {
+  width: 52px; height: 52px; display: grid; place-items: center; border-radius: 16px; margin-bottom: 16px;
+  background: linear-gradient(135deg, rgba(22,82,192,.12), rgba(255,177,0,.18)); color: var(--primary-strong); font-size: 1.4rem; font-weight: 900;
+}
+.service-card { display: flex; flex-direction: column; min-height: 100%; }
+.service-card .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 18px; }
+.tag {
+  display: inline-flex; align-items: center; padding: 7px 12px; border-radius: 999px; font-size: .82rem; font-weight: 700;
+  background: #eef4ff; color: var(--primary);
+}
+.service-card .cta-link { margin-top: auto; color: var(--primary); font-weight: 800; }
+.band {
+  background: linear-gradient(135deg, #ffffff 0%, #eef4ff 100%); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.checklist { padding: 0; margin: 18px 0 0; list-style: none; }
+.checklist li { position: relative; padding-left: 30px; margin-bottom: 12px; color: var(--muted); }
+.checklist li::before {
+  content: "✓"; position: absolute; left: 0; top: 0; width: 20px; height: 20px; border-radius: 50%;
+  background: rgba(16,185,129,.12); color: var(--success); display: grid; place-items: center; font-weight: 900; font-size: .8rem;
+}
+.split { display: grid; grid-template-columns: .95fr 1.05fr; gap: 34px; align-items: center; }
+.metrics { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
+.metric { padding: 22px; border: 1px solid var(--line); border-radius: 20px; background: #fff; box-shadow: var(--shadow); }
+.metric strong { display: block; font-size: 2rem; color: var(--primary-strong); }
+.cta-banner {
+  background: linear-gradient(135deg, #0b1f4d 0%, #12316f 60%, #173d8f 100%); color: #fff; border-radius: 32px; padding: 36px;
+  border: 1px solid rgba(255,255,255,.12); box-shadow: 0 26px 60px rgba(8,22,56,.25);
+}
+.cta-banner p { color: rgba(236,243,255,.82); }
+.faq-item { padding: 20px 22px; border-radius: 18px; border: 1px solid var(--line); background: #fff; box-shadow: var(--shadow); }
+.contact-list { display: grid; gap: 14px; }
+.contact-item { padding: 18px 20px; border-radius: 18px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.footer {
+  background: linear-gradient(135deg, #08152f 0%, #0c1f48 100%); color: rgba(236,243,255,.85); margin-top: 70px;
+}
+.footer a { color: #fff; opacity: .95; }
+.footer-top { display: grid; grid-template-columns: 1.2fr .7fr .7fr .8fr; gap: 28px; padding: 70px 0 34px; }
+.footer-bottom { padding: 20px 0 34px; border-top: 1px solid rgba(255,255,255,.1); color: rgba(236,243,255,.66); font-size: .92rem; }
+.kicker { font-size: .86rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); font-weight: 800; }
+.breadcrumb { padding: 22px 0 0; font-size: .92rem; color: var(--muted); }
+.breadcrumb a { color: var(--primary); font-weight: 700; }
+.page-hero { background: linear-gradient(180deg, #f6f9ff, #ffffff); padding: 34px 0 10px; }
+.page-header { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; }
+.service-layout { display: grid; grid-template-columns: 1fr 340px; gap: 28px; align-items: start; }
+.sidebar-sticky { position: sticky; top: 112px; }
+.sidebar-box {
+  background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 24px; box-shadow: var(--shadow); margin-bottom: 18px;
+}
+.link-list { display: grid; gap: 10px; }
+.link-list a { padding: 10px 12px; border-radius: 12px; font-weight: 700; color: var(--primary-strong); background: #f5f8ff; }
+.service-sections { display: grid; gap: 22px; }
+.service-highlight {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 18px;
+}
+.service-highlight .mini {
+  padding: 18px; border-radius: 18px; background: linear-gradient(180deg, #fff 0%, #f8fbff 100%); border: 1px solid var(--line);
+}
+.notice {
+  padding: 16px 18px; border-left: 4px solid var(--accent); background: #fff9eb; color: #6b4c00; border-radius: 12px;
+}
+.floating-whatsapp {
+  position: fixed; right: 18px; bottom: 18px; z-index: 60;
+}
+.floating-whatsapp a {
+  display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #10b981, #059669); color: white;
+  padding: 16px 18px; border-radius: 999px; box-shadow: 0 18px 40px rgba(16,185,129,.28); font-weight: 800;
+}
+.form-shell {
+  padding: 28px; border-radius: 24px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow);
+}
+.form-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+.form-grid .full { grid-column: 1 / -1; }
+.field label { display: block; margin-bottom: 8px; font-weight: 700; }
+.field input, .field textarea, .field select {
+  width: 100%; border: 1px solid #d4deef; border-radius: 14px; padding: 14px 16px; font: inherit; background: #fbfdff;
+}
+.map-box { min-height: 100%; }
+.legal-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.legal-grid .item { padding: 18px; border-radius: 18px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+@media (max-width: 1080px) {
+  .hero-grid, .split, .service-layout, .footer-top, .page-header { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: repeat(2,1fr); }
+  .grid-3 { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 760px) {
+  .nav { min-height: 78px; }
+  .nav, .actions { flex-wrap: wrap; }
+  .nav-links { width: 100%; overflow-x: auto; padding-bottom: 6px; }
+  .hero-grid { padding: 56px 0 64px; }
+  .hero-stats, .trust-row, .grid-2, .grid-3, .grid-4, .metrics, .service-highlight, .legal-grid, .form-grid { grid-template-columns: 1fr; }
+  .section { padding: 72px 0; }
+  .floating-whatsapp { left: 16px; right: 16px; bottom: 16px; }
+  .floating-whatsapp a { justify-content: center; width: 100%; }
+}
+
+</style><link rel="icon" type="image/png" href="logo-gas-network.png"/><link rel="canonical" href="https://www.gasnetwork.org/servicos/limpeza-interna-de-tubulacao.html"/><meta property="og:type" content="website"/><meta property="og:title" content="Limpeza interna de tubulação de gás | Gás Network Engenharia"/><meta property="og:description" content="Limpeza interna de tubulação de gás com atendimento técnico em São Paulo e região. Procedimentos para limpeza e recuperação de desempenho."/><meta property="og:url" content="https://www.gasnetwork.org/servicos/limpeza-interna-de-tubulacao.html"/><meta property="og:image" content="https://www.gasnetwork.org/service-illustration.svg"/></head><body><div class="topbar"><div class="container"><div class="meta"><span>Empresa de engenharia especializada em gás GN e GLP</span><span>São Paulo, Grande SP, interior e litoral</span></div><div class="meta"><a href="mailto:contato@gasnetwork.com.br">contato@gasnetwork.com.br</a><a href="https://wa.me/5511985424462" target="_blank" rel="noopener">WhatsApp: (11) 98542-4462</a></div></div></div>
+<header class="header"><div class="container nav"><a class="brand" href="index.html"><img class="brand-logo" src="logo-gas-network.png" alt="Logo Gás Network Engenharia"/></a><nav class="nav-links"><a data-nav href="index.html" class="">Início</a><a data-nav href="sobre.html" class="">Empresa</a><a data-nav href="servicos.html" class="">Serviços</a><a data-nav href="contato.html" class="">Contato</a></nav><div class="actions"><a class="btn btn-secondary" href="servicos.html">Ver serviços</a><a class="btn btn-success" href="https://wa.me/5511985424462?text=Olá,%20quero%20solicitar%20um%20orçamento%20para%20serviços%20de%20gás." target="_blank" rel="noopener">Solicitar orçamento</a></div></div></header>
+<section class="page-hero"><div class="container breadcrumb"><a href="index.html">Início</a> / <a href="servicos.html">Serviços</a> / Limpeza interna de tubulação de gás</div><div class="container page-header"><div><span class="eyebrow">Serviço especializado</span><h1>Limpeza interna de tubulação de gás</h1><p class="lead">Procedimentos para limpeza e recuperação de desempenho. Atendimento com foco em segurança, desempenho, regularização e responsabilidade técnica em São Paulo, Grande SP, interior e litoral.</p></div><div><a class="btn btn-success" href="https://wa.me/5511985424462?text=Olá,%20quero%20orçamento%20para%20Limpeza%20interna%20de%20tubulação%20de%20gás" target="_blank" rel="noopener">Solicitar orçamento</a></div></div></section>
+<section class="section"><div class="container service-layout"><div class="service-sections"><article class="card soft"><span class="eyebrow">Visão geral</span><h2 style="margin-top:16px;">Limpeza interna de tubulação de gás com abordagem técnica e comercial orientada a resultado</h2><p>Gás Network Engenharia atende demandas de limpeza interna de tubulação de gás para clientes que precisam de solução segura, rápida e tecnicamente consistente. O serviço é apresentado no site para capturar buscas com intenção real de contratação e também para reforçar autoridade em engenharia de gás.</p><div class="service-highlight"><div class="mini"><strong>Segurança</strong><div class="small">Procedimentos técnicos e foco em redução de risco.</div></div><div class="mini"><strong>Conformidade</strong><div class="small">Execução alinhada às exigências e boas práticas do setor.</div></div><div class="mini"><strong>Atendimento</strong><div class="small">São Paulo capital, Grande SP, interior e litoral.</div></div></div></article><article class="card"><h2>Quando esse serviço é indicado</h2><ul class="checklist"><li>Quando existe necessidade de limpeza interna de tubulação de gás com análise técnica e execução especializada.</li><li>Quando o cliente precisa regularizar, inspecionar, instalar, reparar ou adequar uma rede de gás.</li><li>Quando há exigência de segurança, documentação, vistoria, laudo ou responsabilidade técnica.</li><li>Quando a operação exige mais confiabilidade, prevenção de falhas e melhor desempenho do sistema.</li></ul></article><article class="card"><h2>Como a Gás Network atua nesse serviço</h2><p>A execução é orientada por diagnóstico do cenário, definição da melhor estratégia e aplicação do procedimento adequado para o caso. Isso inclui avaliação do tipo de gás, componentes envolvidos, condição da instalação e objetivo do cliente.</p><ul class="checklist"><li>Análise do contexto técnico e da urgência.</li><li>Planejamento da intervenção e materiais aplicáveis.</li><li>Execução do serviço com foco em segurança e qualidade.</li><li>Testes, ajustes e documentação quando necessário.</li></ul></article><article class="card"><h2>Palavras-chave estratégicas trabalhadas nesta página</h2><div class="tags"><span class="tag">recuperação técnica</span><span class="tag">pressurização</span><span class="tag">vedação e limpeza</span><span class="tag">empresa de gás em São Paulo</span><span class="tag">orçamento rápido</span></div><p class="small">A estrutura desta página foi pensada para facilitar indexação, escaneabilidade, linkagem interna e conversão para WhatsApp.</p></article><article class="card"><h2>Perguntas frequentes sobre limpeza interna de tubulação de gás</h2><div class="grid" style="margin-top:18px;"><div class="faq-item"><strong>Esse serviço atende São Paulo e região?</strong><p>Sim. A empresa atende São Paulo capital, Grande São Paulo, interior e litoral, conforme viabilidade técnica e operacional.</p></div><div class="faq-item"><strong>É possível solicitar orçamento rápido?</strong><p>Sim. O botão de WhatsApp desta página leva direto para o atendimento da empresa.</p></div><div class="faq-item"><strong>O serviço pode exigir laudo ou ART?</strong><p>Dependendo do cenário, a solução pode incluir documentação técnica complementar para regularização e responsabilidade profissional.</p></div></div></article><article class="card dark"><span class="eyebrow dark">CTA do serviço</span><h2 style="margin-top:16px;">Precisa de limpeza interna de tubulação de gás?</h2><p>Fale com a Gás Network Engenharia e solicite atendimento técnico com foco em segurança, conformidade e agilidade.</p><div class="actions" style="margin-top:18px;"><a class="btn btn-success" href="https://wa.me/5511985424462?text=Olá,%20preciso%20de%20Limpeza%20interna%20de%20tubulação%20de%20gás" target="_blank" rel="noopener">Solicitar pelo WhatsApp</a><a class="btn btn-secondary" href="contato.html">Ir para contato</a></div></article></div><aside class="sidebar-sticky"><div class="sidebar-box"><img src="service-illustration.svg" alt="Ilustração técnica para serviço de gás" style="border-radius:18px; margin-bottom:18px;"/><h3>Atendimento rápido</h3><p class="small">Clique abaixo para falar com um especialista da Gás Network.</p><a class="btn btn-success" style="width:100%;" href="https://wa.me/5511985424462?text=Olá,%20quero%20orçamento%20para%20Limpeza%20interna%20de%20tubulação%20de%20gás" target="_blank" rel="noopener">Pedir orçamento</a></div><div class="sidebar-box"><h3>Serviços relacionados</h3><div class="link-list" style="margin-top:14px;"><a href="aplicacao-de-resina-em-tubulacao-de-gas.html">Aplicação de resina em tubulação de gás (sem quebra)</a><a href="teste-de-estanqueidade.html">Teste de estanqueidade (individual e coletivo)</a><a href="laudo-tecnico-de-gas.html">Emissão de laudo técnico de gás</a><a href="emissao-de-art.html">Emissão de ART (Anotação de Responsabilidade Técnica)</a><a href="reparo-em-tubulacao-de-gas.html">Reparo em tubulação de gás</a><a href="instalacao-rede-gn.html">Instalação de rede de gás GN (Comgás)</a></div></div><div class="sidebar-box"><h3>Dados da empresa</h3><p class="small"><strong>Gás Network Engenharia</strong><br/>(11) 98542-4462<br/>contato@gasnetwork.com.br<br/>São Paulo – SP</p><div class="notice">Página com link interno validado para GitHub Pages.</div></div></aside></div></section>
+<footer class="footer"><div class="container footer-top"><div><div class="brand"><img class="footer-logo" src="logo-gas-network.png" alt="Logo Gás Network Engenharia"/></div><p style="margin-top:18px; max-width:48ch;">Soluções em engenharia de gás para instalações, laudos, ART, testes, regularização, manutenção, recuperação sem quebra e atendimento técnico residencial, comercial e industrial.</p><p class="small" style="color:rgba(236,243,255,.72)">Gás Network Serviços e Instalações Ltda</p></div><div><div class="kicker">Serviços em destaque</div><div style="margin-top:14px; line-height:1.9"><a href="aplicacao-de-resina-em-tubulacao-de-gas.html">Aplicação de resina em tubulação de gás (sem quebra)</a><br/><a href="teste-de-estanqueidade.html">Teste de estanqueidade (individual e coletivo)</a><br/><a href="laudo-tecnico-de-gas.html">Emissão de laudo técnico de gás</a><br/><a href="emissao-de-art.html">Emissão de ART (Anotação de Responsabilidade Técnica)</a><br/><a href="reparo-em-tubulacao-de-gas.html">Reparo em tubulação de gás</a><br/></div></div><div><div class="kicker">Contato</div><div style="margin-top:14px; line-height:1.9"><a href="tel:+5511985424462">(11) 98542-4462</a><br/><a href="mailto:contato@gasnetwork.com.br">contato@gasnetwork.com.br</a><br/>Rua Ascânio, 263, Chácara Mafalda, São Paulo – SP, CEP 03373-080</div></div><div><div class="kicker">Atuação</div><p style="margin-top:14px;">São Paulo capital, Grande São Paulo, interior e litoral.</p><a class="btn btn-success" href="https://wa.me/5511985424462?text=Olá,%20gostaria%20de%20falar%20com%20um%20especialista%20da%20Gás%20Network." target="_blank" rel="noopener">Falar no WhatsApp</a></div></div><div class="container footer-bottom">© 2026 Gás Network Engenharia. Todos os direitos reservados. Estrutura pronta para GitHub Pages e personalização com domínio próprio.</div></footer><div class="floating-whatsapp"><a href="https://wa.me/5511985424462?text=Olá,%20quero%20solicitar%20um%20orçamento." target="_blank" rel="noopener">WhatsApp • Orçamento rápido</a></div><script src="js-app.js"></script></body></html>
